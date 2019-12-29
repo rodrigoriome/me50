@@ -66,13 +66,59 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    // In this example, the candidates array is unsorted. Therefore, BINARY SEARCH IS NOT POSSIBLE.
+
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (strcmp(name, candidates[i].name) == 0)
+        {
+            candidates[i].votes++;
+
+            return true;
+        }
+    }
+
     return false;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    // TODO
-    return;
+    // Count winners and their indexes. It should allow no winners as all votes could be invalid.
+    int winners = 0;
+
+    // It should allow everybody winning if all candidates have same amount of votes.
+    int winners_indexes[MAX] = { 0 };
+
+    // Loop through candidates.
+    for (int i = 0; i < candidate_count; i++)
+    {
+        // If candidate doesn't have any votes, no need to update totals.
+        if (candidates[i].votes > 0)
+        {
+            if (candidates[i].votes == candidates[winners_indexes[0]].votes)
+            {
+                winners++;
+                winners_indexes[winners - 1] = i;
+            }
+            else if (candidates[i].votes > candidates[winners_indexes[0]].votes)
+            {
+                winners = 1;
+                winners_indexes[winners - 1] = i;
+            }
+        }
+    }
+
+    if (winners > 0)
+    {
+        for (int i = 0; i < winners; i++)
+        {
+            printf("%s\n", candidates[winners_indexes[i]].name);
+        }
+
+        return;
+    }
+
+    // If all votes are invalid, there is no winner.
+    printf("0 valid votes. There is no winner.\n");
 }
