@@ -1,6 +1,9 @@
 *
 !*/
 !*.c
+!*.h
+!*.bmp
+!Makefile
 !.gitignore
 !.editorconfig
 !README.md
