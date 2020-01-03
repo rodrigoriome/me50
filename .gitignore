@@ -3,6 +3,7 @@
 !*.c
 !*.h
 !*.bmp
+!*.raw
 !Makefile
 !.gitignore
 !.editorconfig
