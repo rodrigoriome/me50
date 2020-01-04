@@ -3,6 +3,7 @@
 !*.c
 !*.h
 !*.bmp
+!/week_5/**/*
 !*.raw
 !Makefile
 !.gitignore
