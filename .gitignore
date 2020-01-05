@@ -6,6 +6,7 @@
 !/week_5/**/*
 !*.raw
 !Makefile
+!*.py
 !.gitignore
 !.editorconfig
 !README.md
