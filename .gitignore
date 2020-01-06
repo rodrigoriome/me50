@@ -8,6 +8,7 @@
 !*.raw
 !Makefile
 !*.py
+!*.sql
 !.gitignore
 !.editorconfig
 !README.md
