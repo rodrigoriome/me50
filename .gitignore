@@ -5,6 +5,7 @@
 !*.bmp
 !/week_5/**/*
 !/week_6/dna/**/*
+!/week_7/houses/**/*
 !*.raw
 !Makefile
 !*.py
