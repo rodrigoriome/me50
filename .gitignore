@@ -6,6 +6,7 @@
 !/week_5/**/*
 !/week_6/dna/**/*
 !/week_7/houses/**/*
+!/track_web/homepage/**/*
 !*.raw
 !Makefile
 !*.py
