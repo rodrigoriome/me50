@@ -1,0 +1,53 @@
+/* Page */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-linerow {
+    margin-top: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    padding: 0.75rem 0;
+}
+
+.header-title {
+    margin: 0;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-cart {
+    display: inline-block;
+    width: 24px;
+}
+
+/* Other */
+
+.hero-section {
+    margin-top: 6rem;
+}
+
+.hero-info-btn {
+    border-radius: 999rem;
+    padding: 0.3rem 0.9rem;
+}
+
+.compare-section {
+    background-color: #f3f3f3;
+}
+
+.checkout-btn {
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border: 1px solid #07c;
+}
+
+#details {
+    margin-top: 2rem;
+}
