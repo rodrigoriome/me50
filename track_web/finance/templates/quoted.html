@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{ symbol.symbol }}</th>
+            <td>{{ symbol.name }}</td>
+            <td>{{ symbol.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+{% endblock %}

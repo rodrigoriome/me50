@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+
+{% if not shares %}
+    <h4>You currently doesn't have any shares.</h4>
+{% else %}
+    <form action="/sell" method="POST">
+        <div class="form-group">
+            <select name="symbol" class="form-control w-25">
+                <option selected hidden disabled>Symbol</option>
+                {% for share in shares %}
+                    <option value="{{ share.symbol }}">{{ share.symbol }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                class="form-control w-25"
+                name="shares"
+                placeholder="Shares"
+            />
+        </div>
+        <button type="submit" class="btn btn-primary">Sell</button>
+    </form>
+{% endif %}
+
+{% endblock %}

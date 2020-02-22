@@ -8,6 +8,7 @@
 !/week_7/houses/**/*
 !/track_web/homepage/**/*
 !/track_web/finance/**/*
+/track_web/finance/__pycache__
 !*.raw
 !Makefile
 !*.py
